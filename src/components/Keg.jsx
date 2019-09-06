@@ -14,7 +14,7 @@ function Keg(props) {
            display: flex;
            justify-content: space-around; 
            border: 2px solid black;
-           padding: 10px;
+           padding: 20px;
            border-radius: 25px;
           }
 
@@ -22,18 +22,17 @@ function Keg(props) {
         `}</style>
             <span>
                 <h3>{props.name}</h3>
-            </span>
-            <span>
+
+
                 <h3>{props.brand}</h3>
-            </span>
-            <span>
+
                 <h3>{props.price}</h3>
-            </span>
-            <span>
+
+
                 <h3>{props.alcoholContent}</h3>
             </span>
-            </div>
-    
+        </div>
+
     );
 }
 

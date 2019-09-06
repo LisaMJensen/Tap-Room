@@ -8,7 +8,12 @@ var masterKegList = [
         price: '$7',
         alcoholContent: 'A lot'
     },
-   
+    {
+        name: 'Beer',
+        brand: 'BeerBrand',
+        price: '$5',
+        alcoholContent: 'A bit'
+    },
 ];
 
 function KegList() {

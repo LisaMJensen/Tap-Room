@@ -13,6 +13,7 @@ function App() {
                 <Route path='/newkeg' component={NewKegForm} />
             </Switch>
             <KegList />
+            <Footer />
         </div>
     );
 }
