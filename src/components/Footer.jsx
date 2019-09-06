@@ -5,13 +5,15 @@ function Footer() {
     return (
         <div>
             <style jsx>{`
-            h1{
+            h4{
                 color: royalblue;
                 background-color: ;
-                font-size: 10px;
+                text-align: center;
+                padding-top: 280px;
+                position: sticky;
             }
             `}</style>
-            Tap Room © 2019  | A web application developed by Lisa Jensen
+            <h4>Tap Room © 2019  | A web application developed by Lisa Jensen</h4>
         </div>
     );
 }
