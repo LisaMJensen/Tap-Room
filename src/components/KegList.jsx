@@ -1,20 +1,38 @@
 import React from 'react';
-import KegList from './KegList';
-import Header from './Header';
-import { Switch, Route } from 'react-router-dom';
-import NewKegForm from './NewKegForm';
+import Keg from './Keg';
 
-function App() {
+var masterKegList = [
+    {
+        name: 'Kegmeister',
+        brand: 'Kegatron',
+        price: '$7',
+        alcoholContent: 'A lot'
+    },
+    // {
+    //     names: 'Sleater and Kinney',
+    //     location: '4B',
+    //     issue: 'Fox image not displaying on page, can only see duck?'
+    // },
+    // {
+    //     names: 'Imani & Jacob',
+    //     location: '9F',
+    //     issue: 'Donkey picture not displaying on hover in Zoology app. :('
+    // }
+];
+
+function KegList() {
     return (
         <div>
-            <Header />
-            <Switch>
-                <Route exact path='/' component={KegList} />
-                <Route path='/newkeg' component={NewKegForm} />
-            </Switch>
-            <KegList />
+            <hr />
+            {masterKegList.map((keg, index) =>
+                <Keg name={keg.name}
+                    brand={keg.brand}
+                    price={keg.price}
+                    alcoholContent={keg.alcoholContent}
+                    key={index} />
+            )}
         </div>
     );
 }
 
-export default App;
+export default KegList;
