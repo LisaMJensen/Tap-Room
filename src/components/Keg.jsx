@@ -6,7 +6,11 @@ function Keg(props) {
         <div>
             <style jsx>{`
           div {
-           
+           margin: 20px;
+           width: 250px;
+           height: 160px;
+           background-color: #e8eaed;
+           text-align: center; 
           }
         `}</style>
             <h3>{props.name}</h3>
