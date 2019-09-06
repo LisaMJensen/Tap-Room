@@ -8,6 +8,13 @@ import NewKegForm from './NewKegForm';
 function App() {
     return (
         <div>
+            <style jsx>{`
+          div {
+               background-color: #c0edda;
+               }
+
+
+        `}</style>
             <Header />
             <Switch>
                 <Route exact path='/' component={KegList} />
