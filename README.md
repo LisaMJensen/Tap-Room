@@ -15,6 +15,8 @@ _This web application allows users to track keg stock and look up beer info ._
 * _Through your terminal, use npm start to launch  ._
 * _View the web application at http://localhost:8080/  ._
 
+## Component Structure
+<img src="Component Structure.png"/>
 
 ## Known Bugs
 * No known bugs at this time.
