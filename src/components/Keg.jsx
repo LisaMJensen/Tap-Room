@@ -7,18 +7,33 @@ function Keg(props) {
             <style jsx>{`
           div {
            margin: 20px;
+           margin-top: 20px;
            width: 250px;
            height: 160px;
            background-color: #e8eaed;
-           text-align: center; 
+           display: flex;
+           justify-content: space-around; 
+           border: 2px solid black;
+           padding: 10px;
+           border-radius: 25px;
           }
+
+
         `}</style>
-            <h3>{props.name}</h3>
-            <h3>{props.brand}</h3>
-            <h3>{props.price}</h3>
-            <h3>{props.alcoholContent}</h3>
-            <hr />
-        </div>
+            <span>
+                <h3>{props.name}</h3>
+            </span>
+            <span>
+                <h3>{props.brand}</h3>
+            </span>
+            <span>
+                <h3>{props.price}</h3>
+            </span>
+            <span>
+                <h3>{props.alcoholContent}</h3>
+            </span>
+            </div>
+    
     );
 }
 
