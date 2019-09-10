@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from "prop-types";
+import NewKegForm from './NewKegForm';
 
 class NewKegControl extends React.Component {
 
@@ -13,10 +15,14 @@ class NewKegControl extends React.Component {
     render() {
         return (
             <div>
-
+                <NewKegForm onNewKegCreation={this.props.onNewKegCreation} />;
             </div>
         );
     }
 }
+
+NewKegControl.propTypes = {
+    onNewKegCreation: PropTypes.func
+};
 
 export default NewKegControl;
