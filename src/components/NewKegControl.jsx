@@ -15,7 +15,7 @@ class NewKegControl extends React.Component {
     render() {
         return (
             <div>
-                <NewKegForm onNewKegCreation={this.props.onNewKegCreation} />;
+                <NewKegForm onNewKegCreation={this.props.onNewKegCreation} />
             </div>
         );
     }
