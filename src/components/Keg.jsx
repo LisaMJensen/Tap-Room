@@ -8,6 +8,7 @@ function Keg(props) {
           div {
            margin: 20px;
            margin-top: 20px;
+           margin-buttom: 20px;
            width: 250px;
            height: 160px;
            background-color: #e8eaed;
@@ -21,14 +22,9 @@ function Keg(props) {
 
         `}</style>
             <span>
-                <h3>{props.name}</h3>
-
-
+                <h2>{props.name}</h2>
                 <h3>{props.brand}</h3>
-
                 <h3>{props.price}</h3>
-
-
                 <h3>{props.alcoholContent}</h3>
             </span>
         </div>

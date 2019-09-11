@@ -10,11 +10,22 @@ function Header() {
                 color: royalblue;
                 background-color: ;
                 font-size: 40px;
+                margin: 10px
+            }
+
+            img{
+                height: 50px;
+                width: auto;
+            }
+
+            p{
+                margin: 30px;
             }
             `}</style>
-            <img src={beerMug} alt="beer mug logo" />
-            <h1>Tap Room</h1>
-            <Link to="/">Home</Link> | <Link to="/newkeg">Create Keg</Link>
+            &nbsp;
+            <h1><img src={beerMug} alt="beer mug logo" />
+            Tap Room</h1>
+            <p><Link to="/">Home</Link> | <Link to="/newkeg">Create Keg</Link></p>
         </div>
     );
 }
