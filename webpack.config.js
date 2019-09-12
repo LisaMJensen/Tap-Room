@@ -18,7 +18,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.css'], //add '.css' "root": __dirname
     },
 
     devtool: '#source-map',
@@ -50,6 +50,13 @@ module.exports = {
                         name: 'images/[hash]-[name].[ext]'
                     }
                 }
+            },
+            {
+                test: /\.less$/,
+                loaders: ["style-loader", "css-loader", "less-loader"]
+            }, {
+                test: /\.css$/,
+                loaders: ["style-loader", "css-loader"]
             },
             {
                 test: /\.jsx?$/,
