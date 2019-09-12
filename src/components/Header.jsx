@@ -29,7 +29,7 @@ function Header() {
             }
             `}</style>
       &nbsp;
-        <Jumbotron bg="danger">
+        <Jumbotron style={{ backgroundColor: '#c0edda', backgroundSize: 'cover', height: '100px', display: 'flex', alignContent: 'center' }}>
         <h1><img src={beerMug} alt="beer mug logo" />
           Tap Room</h1>
       </Jumbotron>
