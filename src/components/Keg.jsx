@@ -22,10 +22,12 @@ function Keg(props) {
 
         `}</style>
       <span>
-        <h2>{props.name}</h2>
-        <h3>{props.brand}</h3>
-        <h3>{props.price}</h3>
-        <h3>{props.alcoholContent}</h3>
+        <h4>{props.name}</h4>
+        <h6>{props.brand}</h6>
+        <h6>{props.price}</h6>
+        <h6>{props.alcoholContent}</h6>
+        <h6>{props.employeeName}</h6>
+        <h6>{props.dateEntered}</h6>
       </span>
     </div>;
 
@@ -49,6 +51,8 @@ Keg.propTypes = {
   brand: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   alcoholContent: PropTypes.string.isRequired,
+  employeeName: PropTypes.string.isRequired,
+  dateEntered: PropTypes.string.isRequired,
   currentRouterPath: PropTypes.string,
   onKegSelection: PropTypes.func,
   KegId: PropTypes.string.isRequired

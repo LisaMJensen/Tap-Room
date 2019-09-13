@@ -32,7 +32,7 @@ function Header() {
           Tap Room</h1>
       </Jumbotron>
       <Breadcrumb style={{ backgroundColor: '#19785b', }}>
-        <p><Link to="/">Home</Link> | <Link to="/newkeg">Create Keg</Link></p>
+        <p><Link to="/">Home</Link> | <Link to="/newkeg">Create Keg</Link> | <Link to="/admin">Employees</Link></p>
       </Breadcrumb>
 
     </div>
