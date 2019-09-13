@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 function KegDetail(props) {
     return (
         <div>
-            <h1>{props.selectedKeg.names} - {props.selectedKeg.location}</h1>
-            <h2>Submitted {props.selectedKeg.formattedWaitTime} ago</h2>
-            <h4><em>{props.selectedKeg.issue}</em></h4>
+            <h1>{props.selectedKeg.name}</h1>
+            <h2>{props.selectedKeg.brand}</h2>
+            <h2>{props.selectedKeg.price}</h2>
+            <h2>{props.selectedKeg.alcoholContent}</h2>
         </div>
     );
 }

@@ -6,7 +6,7 @@ function KegList(props) {
   return (
     <div>
       <hr />
-      {Objects.keys(props.kegList).map(function (kegId) {
+      {Object.keys(props.kegList).map(function (kegId) {
         var keg = props.kegList[kegId];
         return <Keg name={keg.name}
           brand={keg.brand}
@@ -22,9 +22,9 @@ function KegList(props) {
 }
 
 KegList.propTypes = {
-  KegList: PropTypes.objects,
+  kegList: PropTypes.objects,
   currentRouterPath: PropTypes.string,
-  onKegSelection: PropTypes.function
+  onKegSelection: PropTypes.func
 };
 
 export default KegList;
