@@ -55,6 +55,6 @@ Keg.propTypes = {
   dateEntered: PropTypes.string.isRequired,
   currentRouterPath: PropTypes.string,
   onKegSelection: PropTypes.func,
-  KegId: PropTypes.string.isRequired
+  kegId: PropTypes.string.isRequired
 };
 export default Keg;

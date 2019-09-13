@@ -16,7 +16,7 @@ function KegList(props) {
           dateEntered={keg.dateEntered}
           currentRouterPath={props.currentRouterPath}
           key={kegId}
-          kegID={kegId}
+          kegId={kegId}
           onKegSelection={props.onKegSelection} />;
       })}
     </div>
@@ -24,9 +24,9 @@ function KegList(props) {
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.objects,
+  kegList: PropTypes.object,
   currentRouterPath: PropTypes.string,
-  onKegSelection: PropTypes.func.isRequired
+  onKegSelection: PropTypes.func
 };
 
 export default KegList;

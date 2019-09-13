@@ -5,11 +5,12 @@ function KegDetail(props) {
     return (
         <div>
             <h1>{props.selectedKeg.name}</h1>
-            <h2>{props.selectedKeg.brand}</h2>
-            <h2>{props.selectedKeg.price}</h2>
-            <h2>{props.selectedKeg.alcoholContent}</h2>
-            <h2>{props.selectedKeg.employeeName}</h2>
-            <h2>{props.selectedKeg.dateEntered}</h2>
+            <h4>Brand Name:{props.selectedKeg.brand}</h4>
+            <h4>Price:{props.selectedKeg.price}</h4>
+            <h4>Alcohol Content:{props.selectedKeg.alcoholContent}</h4>
+            <h4>Entered by Employee:{props.selectedKeg.employeeName}</h4>
+            <h4>Date Entered:{props.selectedKeg.dateEntered}</h4>
+
         </div>
     );
 }
