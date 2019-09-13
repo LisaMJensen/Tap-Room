@@ -8,7 +8,7 @@ function NewKegForm(props) {
   let _price = null;
   let _alcoholContent = null;
 
-  function handleNewTicketFormSubmission(event) {
+  function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({ name: _name.value, brand: _brand.value, price: _price.value, alcoholContent: _alcoholContent.value });
     _name.value = '';
@@ -26,7 +26,7 @@ function NewKegForm(props) {
 
 
         `}</style>
-      <form onSubmit={handleNewTicketFormSubmission}>
+      <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           id='name'

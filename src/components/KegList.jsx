@@ -8,14 +8,14 @@ function KegList(props) {
       <hr />
       {Objects.keys(props.kegList).map(function (kegId) {
         var keg = props.kegList[kegId];
-        <Keg name={keg.name}
+        return <Keg name={keg.name}
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
           currentRouterPath={props.currentRouterPath}
-          key={index}
-          kegID={kegID}
-          onTicketSelection={props.onTicketSelection} />;
+          key={kegId}
+          kegID={kegId}
+          onKegSelection={props.onKegSelection} />;
       })}
     </div>
   );
@@ -24,7 +24,7 @@ function KegList(props) {
 KegList.propTypes = {
   KegList: PropTypes.objects,
   currentRouterPath: PropTypes.string,
-  onTicketSelection: PropTypes.func
+  onKegSelection: PropTypes.function
 };
 
 export default KegList;

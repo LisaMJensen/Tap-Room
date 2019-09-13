@@ -18,7 +18,7 @@ class App extends React.Component {
       selectedKeg: null
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
-    this.handleChangingSelectedTicket = this.handleChangingSelectedTicket.bind(this);
+    this.handleChangingSelectedKeg = this.handleChangingSelectedKeg.bind(this);
   }
 
 
@@ -49,7 +49,8 @@ class App extends React.Component {
           <Route exact path='/' render={() => <KegList kegList={this.state.masterKegList} />} />
           <Route path='/newkeg' render={() => <NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
           <Route path='/admin' render={(props) => <Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}
-            onKegSelection={this.state.selectedKeg} />} />
+            onKegSelection={this.handleChangingSelectedKeg}
+            selectedTicket={this.state.selectedTicket} />} />
           <Route component={Error404} />
         </Switch>
         <Footer />
