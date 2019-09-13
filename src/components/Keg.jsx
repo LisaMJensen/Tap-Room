@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card, CardDeck, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 function Keg(props) {
   const kegInformation =
@@ -11,29 +12,34 @@ function Keg(props) {
            margin-buttom: 20px;
            width: 250px;
            height: 160px;
-           background-color: #e8eaed;
+          
            display: flex;
            justify-content: space-around; 
-           border: 2px solid black;
+           
            padding: 20px;
-           border-radius: 25px;
+          
           }
 
 
         `}</style>
-      <span>
-        <h4>{props.name}</h4>
-        <h6>{props.brand}</h6>
-        <h6>{props.price}</h6>
-        <h6>{props.alcoholContent}</h6>
-        {/* <h6>{props.employeeName}</h6>
+      <CardDeck>
+        <Card style={{ borderRadius: '25px', border: '2px solid black', justifyContent: 'space-around', padding: '20px' }}>
+          <CardBody>
+            <CardTitle style={{ color: 'royalBlue' }}><h2>{props.name}</h2></CardTitle>
+            <CardSubtitle><h3>{props.brand}</h3></CardSubtitle>
+
+            <h6>{props.price}</h6>
+            <h6>{props.alcoholContent}</h6>
+            {/* <h6>{props.employeeName}</h6>
         <h6>{props.dateEntered}</h6> */}
-      </span>
+          </CardBody>
+        </Card>
+      </CardDeck>
     </div>;
 
   if (props.currentRouterPath === '/admin') {
     return (
-      <div onClick={() => { props.onKegSelection(props.kegId); }} style={{ backgroundColor: 'red', alignContent: 'center' }}>
+      <div onClick={() => { props.onKegSelection(props.kegId); }} style={{}}>
         {kegInformation}
       </div>
     );
