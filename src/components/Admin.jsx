@@ -10,7 +10,7 @@ function Admin(props) {
     }
     return (
         <div>
-            <h2>Admin</h2>
+            <h2>Keg Details</h2>
             {optionalSelectedKegContent}
             <KegList
                 kegList={props.kegList}
@@ -20,8 +20,8 @@ function Admin(props) {
     );
 }
 
-Admin.PropTypes = {
-    kegList: PropTypes.array,
+Admin.propTypes = {
+    kegList: PropTypes.object,
     currentRouterPath: PropTypes.string.isRequired,
     onKegSelection: PropTypes.func.isRequired,
     selectedKeg: PropTypes.string

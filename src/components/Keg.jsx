@@ -26,8 +26,8 @@ function Keg(props) {
         <h6>{props.brand}</h6>
         <h6>{props.price}</h6>
         <h6>{props.alcoholContent}</h6>
-        <h6>{props.employeeName}</h6>
-        <h6>{props.dateEntered}</h6>
+        {/* <h6>{props.employeeName}</h6>
+        <h6>{props.dateEntered}</h6> */}
       </span>
     </div>;
 
