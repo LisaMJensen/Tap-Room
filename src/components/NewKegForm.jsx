@@ -7,6 +7,8 @@ function NewKegForm(props) {
   let _brand = null;
   let _price = null;
   let _alcoholContent = null;
+  let _employeeName = null; //new code - add throughout
+  let _dateEntered = null; //new code - add throughout
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
@@ -15,6 +17,8 @@ function NewKegForm(props) {
     _brand.value = '';
     _price.value = '';
     _alcoholContent.value = '';
+    _employeeName.value = '';
+    _dateEntered.value = '';
   }
 
   return (

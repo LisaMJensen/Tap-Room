@@ -31,7 +31,7 @@ function Keg(props) {
 
   if (props.currentRouterPath === '/admin') {
     return (
-      <div onClick={() => { props.onKegSelection(props.kegId); }}>
+      <div onClick={() => { props.onKegSelection(props.kegId); }} style={{ backgroundColor: 'red', alignContent: 'center' }}>
         {kegInformation}
       </div>
     );
@@ -40,8 +40,8 @@ function Keg(props) {
       <div>
         {kegInformation}
       </div>
-  );
-    }
+    );
+  }
 }
 
 Keg.propTypes = {
