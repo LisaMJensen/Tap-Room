@@ -59,6 +59,20 @@ function NewKegForm(props) {
           ref={(input) => { _alcoholContent = input; }} />
         <br></br>
         <br></br>
+        <input
+          type='text'
+          id='employeeName'
+          placeholder='Listing Entered By'
+          ref={(input) => { _employeeName = input; }} />
+        <br></br>
+        <br></br>
+        <input
+          type='text'
+          id='dateEntered'
+          placeholder='Date Entered'
+          ref={(input) => { _dateEntered = input; }} />
+        <br></br>
+        <br></br>
         <button variant="primary" type='submit'>Add Keg</button>
       </form>
     </div>

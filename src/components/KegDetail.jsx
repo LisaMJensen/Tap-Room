@@ -8,6 +8,8 @@ function KegDetail(props) {
             <h2>{props.selectedKeg.brand}</h2>
             <h2>{props.selectedKeg.price}</h2>
             <h2>{props.selectedKeg.alcoholContent}</h2>
+            <h2>{props.selectedKeg.employeeName}</h2>
+            <h2>{props.selectedKeg.dateEntered}</h2>
         </div>
     );
 }
