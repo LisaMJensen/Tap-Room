@@ -10,7 +10,7 @@ function Header() {
       <style jsx>{`
             h1{
                 color: royalblue;
-               
+                font-weight: bold;
                 font-size: 40px;
                 margin: 10px
             }
@@ -24,16 +24,14 @@ function Header() {
                 margin: 30px;
             }
 
-            HeaderJumbo{
-              background-color: blue;
-            }
+           
             `}</style>
       &nbsp;
         <Jumbotron style={{ backgroundColor: '#c0edda', backgroundSize: 'cover', height: '100px', display: 'flex', alignContent: 'center' }}>
         <h1><img src={beerMug} alt="beer mug logo" />
           Tap Room</h1>
       </Jumbotron>
-      <Breadcrumb>
+      <Breadcrumb style={{ backgroundColor: '#19785b', }}>
         <p><Link to="/">Home</Link> | <Link to="/newkeg">Create Keg</Link></p>
       </Breadcrumb>
 
